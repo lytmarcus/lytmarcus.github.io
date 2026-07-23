@@ -191,7 +191,8 @@ const experience = [
 const awards = [
   {
     period: "Jul 2026",
-    title: "Social Innovation Inventor — Competition for Innovative Design 2025-2026",
+    title:
+      "Social Innovation Inventor – Competition for Innovative Design 2025-2026 Smart Design for a Resilient & Cultural Southern Shore",
     organization: "World Green Organization",
     detail: "Finalist — Tertiary Group: Po Chong Wan, Aberdeen Typhoon Shelter",
   },
@@ -221,7 +222,7 @@ export default function Home() {
     <div className="site-shell">
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Back to top">
-          M<span>LYT</span>
+          M
         </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
