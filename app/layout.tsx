@@ -12,17 +12,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(deploymentUrl),
   title: "Marcus Leung | Urban Studies Portfolio",
   description:
-    "Urban planning, spatial research, design and visual storytelling by LEUNG Yin To, Marcus.",
+    "Urban planning, urban design, transportation, geomatics and spatial research by Marcus Leung Yin To.",
   openGraph: {
     title: "Marcus Leung | Urban Studies Portfolio",
-    description: "Urban planning, spatial research, design and visual storytelling.",
+    description: "Urban planning, urban design, transportation, geomatics and spatial research.",
     type: "website",
     images: [{ url: "og.png", width: 1200, height: 630, alt: "Marcus Leung urban studies portfolio" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Marcus Leung | Urban Studies Portfolio",
-    description: "Urban planning, spatial research, design and visual storytelling.",
+    description: "Urban planning, urban design, transportation, geomatics and spatial research.",
     images: ["og.png"],
   },
 };
