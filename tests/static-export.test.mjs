@@ -15,6 +15,7 @@ test("exports the portfolio as four accessible pages", async () => {
   assert.doesNotMatch(aboutHtml, /Bedford Court/i);
 
   assert.match(projectsHtml, /Bedford Court/i);
+  assert.match(projectsHtml, /How I see, read and shape the city/i);
   assert.match(projectsHtml, /Project [^A-Za-z0-9]W[^A-Za-z0-9]/i);
   assert.match(projectsHtml, /RiVITALISE/i);
   assert.match(projectsHtml, /portfolio-page-04\.jpg/i);
