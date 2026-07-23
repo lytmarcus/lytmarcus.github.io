@@ -175,7 +175,7 @@ export default function ProjectsPage() {
         <section className="work-section" aria-labelledby="work-title">
           <div className="section-heading section-pad">
             <p className="eyebrow">Selected projects / 2023 - 2026</p>
-            <h1 id="work-title">Five studies of how cities change.</h1>
+            <h1 id="work-title">How I see, read and shape the city.</h1>
           </div>
 
           <div className="project-list">
