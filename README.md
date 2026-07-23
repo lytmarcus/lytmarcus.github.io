@@ -24,6 +24,9 @@ The included workflow publishes every push to `main`.
 ## Content
 
 - Five selected urban planning and design projects
-- Education, awards, tools and professional experience
+- Education, awards, tools and professional experience updated to July 2026
+- Twenty-two cropped project images and diagrams linked to their original narratives
+- Full-screen portfolio cover using the complete supplied hero image
 - Downloadable full portfolio PDF
+- Downloadable latest CV PDF
 - Responsive layouts and reduced-motion support
