@@ -1,8 +1,8 @@
 # Marcus Leung - Urban Studies Portfolio
 
-A responsive portfolio built from `Leung_YinTo_Portfolio.pdf`, with project
-boards preserved as visual assets and the core narrative rebuilt as accessible
-HTML.
+A responsive portfolio built from the original project spreads, with each
+spread divided at its exact centre into complete A4 landscape pages. The core
+narrative is rebuilt as accessible HTML while the source PDFs remain private.
 
 ## Local preview
 
@@ -25,8 +25,7 @@ The included workflow publishes every push to `main`.
 
 - Five selected urban planning and design projects
 - Education, awards, tools and professional experience updated to July 2026
-- Twenty-two cropped project images and diagrams linked to their original narratives
+- Fourteen complete A4 project pages presented in their original sequence
 - Full-screen portfolio cover using the complete supplied hero image
-- Downloadable full portfolio PDF
-- Downloadable latest CV PDF
+- No public or downloadable CV/portfolio PDF files
 - Responsive layouts and reduced-motion support
