@@ -14,9 +14,15 @@ test("exports the complete portfolio as one continuous accessible page", async (
   assert.match(html, /RiVITALISE/i);
   assert.match(html, /portfolio-page-04\.jpg/i);
   assert.match(html, /portfolio-page-17\.jpg/i);
-  assert.match(html, /Research Assistant/i);
+  assert.match(html, /Summer Research Assistant Intern/i);
+  assert.match(html, /Research Trainee/i);
+  assert.match(html, /Docent Trainee/i);
+  assert.match(html, /Very Hong Kong[\s\S]*Liber Research Community[\s\S]*The Conservancy Association Centre for Heritage/i);
   assert.match(html, /Jul 2026 - Present/i);
-  assert.match(html, /Smart Design for a Resilient &amp; Cultural Southern Shore/i);
+  assert.match(html, /2025-2026<br\/>Smart Design for a Resilient &amp; Cultural Southern Shore/i);
+  assert.match(html, /2024 Hong Kong Press Photographers Association Competition/i);
+  assert.match(html, /1st Runner-up \(Student Feature\), Merit \(Student Photo Essay\)/i);
+  assert.match(html, /Adobe Graphic Designer[\s\S]*2024 Hong Kong Press Photographers Association Competition[\s\S]*Integrated Photoshop Masterclass/i);
   assert.match(html, /lytmarcus@link\.cuhk\.edu\.hk/i);
   assert.match(html, /href="#about"/i);
   assert.match(html, /href="#work"/i);
