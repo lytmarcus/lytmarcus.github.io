@@ -160,7 +160,7 @@ const projects: Project[] = [
 const experience = [
   {
     period: "Jul 2026 - Present",
-    role: "Research Assistant",
+    role: "Summer Research Assistant Intern",
     place: "Institute of Space and Earth Information Science, CUHK",
     detail:
       "Supported an environmental health research project under the supervision of Prof. Mei-Po Kwan, assisting in participant recruitment, data collection and data entry while coordinating research logistics and materials preparation.",
@@ -186,13 +186,28 @@ const experience = [
     detail:
       "Researched Hong Kong placemaking cases and co-curated a bilingual exhibition at Tai Kwun for the Asia Placemaking Convention.",
   },
+  {
+    period: "Dec 2022 - Oct 2023",
+    role: "Research Trainee",
+    place: "Liber Research Community",
+    detail:
+      "Conducted situational analyses, designed and executed planning-related research tasks, including learning GIS data analysis and researching government planning-related documents.",
+  },
+  {
+    period: "Dec 2022 - Mar 2023",
+    role: "Docent Trainee",
+    place: "The Conservancy Association Centre for Heritage",
+    detail:
+      "Trained in Tai Po and Luk Heung San Tsuen’s history, culture, and local lifestyles through expert presentations and field visits, and served as a docent delivering public heritage tours to promote Luk Heung’s historical significance.",
+  },
 ];
 
 const awards = [
   {
     period: "Jul 2026",
     title:
-      "Social Innovation Inventor – Competition for Innovative Design 2025-2026 Smart Design for a Resilient & Cultural Southern Shore",
+      "Social Innovation Inventor – Competition for Innovative Design 2025-2026",
+    titleContinuation: "Smart Design for a Resilient & Cultural Southern Shore",
     organization: "World Green Organization",
     detail: "Finalist — Tertiary Group: Po Chong Wan, Aberdeen Typhoon Shelter",
   },
@@ -208,6 +223,12 @@ const awards = [
     title: "Adobe Graphic Designer",
     organization: "Adobe",
     detail: "Professional certification",
+  },
+  {
+    period: "May 2025",
+    title: "2024 Hong Kong Press Photographers Association Competition",
+    organization: "Hong Kong Press Photographers Association",
+    detail: "1st Runner-up (Student Feature), Merit (Student Photo Essay)",
   },
   {
     period: "Mar 2025",
@@ -344,7 +365,15 @@ export default function Home() {
               {awards.map((award) => (
                 <article key={award.title}>
                   <p className="cv-period">{award.period}</p>
-                  <h3>{award.title}</h3>
+                  <h3>
+                    {award.title}
+                    {"titleContinuation" in award ? (
+                      <>
+                        <br />
+                        {award.titleContinuation}
+                      </>
+                    ) : null}
+                  </h3>
                   <p className="organization">{award.organization}</p>
                   <p>{award.detail}</p>
                 </article>
