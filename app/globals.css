@@ -260,8 +260,6 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1.4142 / 1;
-  object-fit: contain;
   background: var(--white);
   pointer-events: none;
   -webkit-user-drag: none;
