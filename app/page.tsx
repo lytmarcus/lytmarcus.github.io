@@ -226,7 +226,7 @@ const awards = [
   },
   {
     period: "May 2025",
-    title: "2024 Hong Kong Press Photographers Association Competition",
+    title: "Hong Kong Press Photographers Association Competition 2024",
     organization: "Hong Kong Press Photographers Association",
     detail: "1st Runner-up (Student Feature), Merit (Student Photo Essay)",
   },
@@ -388,7 +388,7 @@ export default function Home() {
             </div>
             <div className="cv-card tools-card">
               <p className="card-label">Software</p>
-              <p className="skills-copy">Adobe Creative Suite / ArcGIS Pro / AutoCAD / D5 Render / Enscape / Figma / Microsoft Office / QGIS / Rhino / SketchUp / Twinmotion</p>
+              <p className="skills-copy">Adobe Creative Suite / ArcGIS Pro / AutoCAD / Codex / D5 Render / Enscape / Figma / Microsoft Office / QGIS / Rhino / SketchUp / Twinmotion</p>
             </div>
           </div>
         </section>
