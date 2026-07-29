@@ -242,9 +242,6 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Back to top">
-          M
-        </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#work">Projects</a>
