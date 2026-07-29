@@ -32,5 +32,6 @@ test("exports the complete portfolio as one continuous accessible page", async (
   assert.doesNotMatch(html, /Marcus_Leung_Yin_To_CV\.pdf/i);
   assert.doesNotMatch(html, /Leung_YinTo_Portfolio\.pdf/i);
   assert.match(html, /aria-label="Main navigation"/i);
+  assert.doesNotMatch(html, /class="wordmark"|aria-label="Back to top"/i);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/i);
 });
