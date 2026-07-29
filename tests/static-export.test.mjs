@@ -14,6 +14,11 @@ test("exports the complete portfolio as one continuous accessible page", async (
   assert.match(html, /RiVITALISE/i);
   assert.match(html, /portfolio-page-04\.jpg/i);
   assert.match(html, /portfolio-page-17\.jpg/i);
+  assert.match(html, /class="portfolio-image-trigger"/i);
+  assert.match(html, /class="portfolio-lightbox"/i);
+  assert.match(html, /Left click to zoom in/i);
+  assert.match(html, /draggable="false"/i);
+  assert.doesNotMatch(html, /target="_blank"|<a[^>]+href="projects\/pages\/portfolio-page-/i);
   assert.match(html, /Summer Research Assistant Intern/i);
   assert.match(html, /Research Trainee/i);
   assert.match(html, /Docent Trainee/i);

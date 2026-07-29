@@ -240,25 +240,148 @@ img {
   margin: 0;
 }
 
-.portfolio-pages a {
+.portfolio-image-trigger {
+  appearance: none;
+  position: relative;
   display: block;
+  width: 100%;
+  border: 0;
   padding: clamp(0.5rem, 1.2vw, 1.15rem);
   overflow: hidden;
   background: #d9d9d3;
   box-shadow: 0 2.2rem 7rem rgba(0, 0, 0, 0.18);
+  cursor: zoom-in;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
-.portfolio-pages img {
+.portfolio-image-trigger img {
+  display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 1.4142 / 1;
   object-fit: contain;
   background: var(--white);
-  transition: transform 500ms cubic-bezier(.2,.8,.2,1);
+  pointer-events: none;
+  -webkit-user-drag: none;
 }
 
-.portfolio-pages a:hover img {
-  transform: scale(1.006);
+.portfolio-zoom-hint {
+  position: absolute;
+  right: clamp(0.9rem, 2vw, 1.6rem);
+  bottom: clamp(0.9rem, 2vw, 1.6rem);
+  padding: 0.55rem 0.72rem;
+  background: var(--ink);
+  color: var(--acid);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.portfolio-lightbox {
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: clamp(0.75rem, 2vw, 2rem);
+  overflow: hidden;
+  background: rgba(10, 15, 12, 0.96);
+  color: var(--white);
+}
+
+.portfolio-lightbox::backdrop {
+  background: rgba(10, 15, 12, 0.92);
+}
+
+.portfolio-lightbox-panel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.portfolio-lightbox-toolbar,
+.portfolio-lightbox-controls {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-lightbox-toolbar {
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.portfolio-lightbox-toolbar p,
+.portfolio-lightbox-instructions {
+  margin: 0;
+}
+
+.portfolio-lightbox-controls {
+  gap: 0.45rem;
+}
+
+.portfolio-lightbox-controls button {
+  min-width: 2.35rem;
+  min-height: 2.35rem;
+  border: 1px solid rgba(242, 241, 235, 0.35);
+  padding: 0.35rem 0.65rem;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.portfolio-lightbox-controls button:hover:not(:disabled),
+.portfolio-lightbox-controls button:focus-visible {
+  border-color: var(--acid);
+  color: var(--acid);
+}
+
+.portfolio-lightbox-controls button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.portfolio-lightbox-controls output {
+  min-width: 3.2rem;
+  text-align: center;
+}
+
+.portfolio-lightbox-close {
+  margin-left: 0.35rem;
+}
+
+.portfolio-lightbox-viewport {
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: #151a17;
+}
+
+.portfolio-lightbox-image {
+  display: block;
+  max-width: none;
+  height: auto;
+  margin: auto;
+  cursor: zoom-in;
+  -webkit-user-drag: none;
+}
+
+.portfolio-lightbox-instructions {
+  padding-top: 0.75rem;
+  color: rgba(242, 241, 235, 0.62);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  text-align: center;
 }
 
 .portfolio-pages figcaption {
@@ -586,9 +709,26 @@ footer p {
     width: 100%;
   }
 
-  .portfolio-pages a {
+  .portfolio-image-trigger {
     padding: 0.35rem;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.2);
+  }
+
+  .portfolio-lightbox-toolbar {
+    align-items: flex-start;
+  }
+
+  .portfolio-lightbox-toolbar > p {
+    display: none;
+  }
+
+  .portfolio-lightbox-controls {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .portfolio-lightbox-instructions {
+    font-size: 0.56rem;
   }
 
   .portfolio-pages figcaption {

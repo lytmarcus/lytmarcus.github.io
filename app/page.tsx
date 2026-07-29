@@ -1,3 +1,5 @@
+import PortfolioImage from "./portfolio-image";
+
 type PortfolioPage = {
   page: string;
   src: string;
@@ -297,13 +299,7 @@ export default function Home() {
                   {project.pages.map((portfolioPage) => (
                     <li key={portfolioPage.page}>
                       <figure>
-                        <a
-                          href={portfolioPage.src}
-                          target="_blank"
-                          aria-label={`Open portfolio page ${portfolioPage.page} at full size`}
-                        >
-                          <img src={portfolioPage.src} alt={portfolioPage.alt} loading="lazy" />
-                        </a>
+                        <PortfolioImage src={portfolioPage.src} alt={portfolioPage.alt} />
                         <figcaption>
                           <span>Page {portfolioPage.page}</span>
                           <span>{portfolioPage.caption}</span>
