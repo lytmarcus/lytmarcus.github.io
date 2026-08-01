@@ -381,7 +381,7 @@ export default function Home() {
             </div>
             <div className="cv-card tools-card">
               <p className="card-label">Software</p>
-              <p className="skills-copy">Adobe Creative Suite / ArcGIS Pro / AutoCAD / Codex / D5 Render / Enscape / Figma / Microsoft Office / QGIS / Rhino / SketchUp / Twinmotion</p>
+              <p className="skills-copy">Adobe Creative Suite / ArcGIS Pro / AutoCAD / Codex / D5 Render / Enscape / Figma / Microsoft Office / Opencode / QGIS / Rhino / SketchUp / Twinmotion</p>
             </div>
           </div>
         </section>
