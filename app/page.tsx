@@ -162,7 +162,7 @@ const projects: Project[] = [
 const experience = [
   {
     period: "Jul 2026 - Present",
-    role: "Summer Research Assistant Intern",
+    role: "Research Assistant Intern",
     place: "Institute of Space and Earth Information Science, CUHK",
     detail:
       "Supported an environmental health research project under the supervision of Prof. Mei-Po Kwan, assisting in participant recruitment, data collection and data entry while coordinating research logistics and materials preparation.",
@@ -211,7 +211,7 @@ const awards = [
       "Social Innovation Inventor – Competition for Innovative Design 2025-2026",
     titleContinuation: "Smart Design for a Resilient & Cultural Southern Shore",
     organization: "World Green Organization",
-    detail: "Finalist — Tertiary Group: Po Chong Wan, Aberdeen Typhoon Shelter",
+    detail: "Merit Award — Tertiary Group: Po Chong Wan, Aberdeen Typhoon Shelter",
   },
   {
     period: "Jun 2026",
@@ -381,7 +381,7 @@ export default function Home() {
             </div>
             <div className="cv-card tools-card">
               <p className="card-label">Software</p>
-              <p className="skills-copy">Adobe Creative Suite / ArcGIS Pro / AutoCAD / Codex / D5 Render / Enscape / Figma / Microsoft Office / Opencode / QGIS / Rhino / SketchUp / Twinmotion</p>
+              <p className="skills-copy">Adobe Creative Suite / ArcGIS Pro / AutoCAD / Codex / D5 Render / Enscape / Figma / Microsoft Office / QGIS / Rhino / SketchUp / Twinmotion</p>
             </div>
           </div>
         </section>
